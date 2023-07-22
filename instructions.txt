@@ -1,0 +1,12 @@
+1. install django==3.2
+2. django-admin startproject pizza . 
+3. pip install python-decouple -> open -> хранит клюи как .env 
+4. sectret_key = -> python3 (shell) -> import secrets, secrets.token_hex(12)->token! put it into secret_key .env
+5. startapp authentication
+6. authentications and orders into -> settings 
+7. installing djangorestframework 
+8. Installed_app -> 2apps -> and runserver
+9. authentication -> models -> pip install django-phonenumber-field
+10. settings -> AUTH_USER_MODEL = 'authentication.User'
+11. makemigrations authentication - migrate - delete old sqlite3, createsuperuser, runserver
+12. authentication -> admin.py ->
