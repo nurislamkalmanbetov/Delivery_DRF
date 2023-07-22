@@ -9,4 +9,6 @@
 9. authentication -> models -> pip install django-phonenumber-field
 10. settings -> AUTH_USER_MODEL = 'authentication.User'
 11. makemigrations authentication - migrate - delete old sqlite3, createsuperuser, runserver
-12. authentication -> admin.py ->
+12. authentication -> admin.py -> admin.site.register(User) -> runserver
+13. Orders -> models -> makemigrations orders -> admin.py -> runserver
+14. 
