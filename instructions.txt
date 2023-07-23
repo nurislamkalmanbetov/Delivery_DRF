@@ -11,4 +11,5 @@
 11. makemigrations authentication - migrate - delete old sqlite3, createsuperuser, runserver
 12. authentication -> admin.py -> admin.site.register(User) -> runserver
 13. Orders -> models -> makemigrations orders -> admin.py -> runserver
-14. 
+14. add serializers.py auth User -> Views ->
+
