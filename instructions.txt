@@ -11,5 +11,12 @@
 11. makemigrations authentication - migrate - delete old sqlite3, createsuperuser, runserver
 12. authentication -> admin.py -> admin.site.register(User) -> runserver
 13. Orders -> models -> makemigrations orders -> admin.py -> runserver
-14. add serializers.py auth User -> Views ->
+14. (Authentications with username,email,phonnumber,pass) - add serializers.py auth User -> Views ->
+15. JWT: https://django-rest-framework-simplejwt.readthedocs.io/en/latest/
+       djoser: https://djoser.readthedocs.io/en/latest/getting_started.html
+        pip install -U djoser -> pip install -U djangorestframework_simplejwt
+         REST_FRAME_WORK->SIMPLE_JWT -> project urls -> path('auth/', include('djoser.urls.jwt')), #/auth/jwt/create/
 
+
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5MDE4NDc4MiwiaWF0IjoxNjkwMDk4MzgyLCJqdGkiOiIyODUxYjE2MDY1NjQ0ZDJjYTk2YTY0OGE2MGNlMTI3ZiIsInVzZXJfaWQiOjF9.Au7BCg-WSj7DJbi9Reizpk3wpY4V5x5QK3KzKZQIEew",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwMTg0NzgyLCJpYXQiOjE2OTAwOTgzODIsImp0aSI6ImZhNTI5YWE5OGNiZjRlYTI5OTE1MDI4ODdiODNiZDM0IiwidXNlcl9pZCI6MX0.A7ePnq-cwbvHOsQ_6HN9Y-nNU08StECxmjEAv4SahVo"
