@@ -16,9 +16,9 @@ class UserCreateView(generics.GenericAPIView):
 
     serializer_class = serializers.UserCreationSerializer
     def post(self,request):
-        data=request.data
+        data = request.data
 
-        serializer=self.serializer_class(data=data)
+        serializer = self.serializer_class(data=data)
 
         if serializer.is_valid():
             serializer.save()
